@@ -11,6 +11,8 @@
     height: 100vh;
     background-position: bottom center;
     background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 76% 100%, 23% 100%);
+
 }
 .hero h1{
     text-align: center;
@@ -28,23 +30,36 @@
     margin-top: 60px;
     margin-bottom: 60px; */
     margin: 60px auto;
-    background-color: rgb(151, 97, 201);
+    /* background-color: rgb(151, 97, 201); */
     padding: 60px;
-
+    background: linear-gradient(50deg , violet , pink , rgb(66, 66, 207) );
+    
 }
-.article h2{
+.article h2 ,#cow-type h2{
     text-align: center;
     font-size: 48px;
-    border-bottom: 2px solid beige;
+    border-bottom: 2px solid rgb(41, 41, 38);
     padding-bottom: 30px;
     margin-bottom: 60px;
-    color: antiquewhite;
+    /* color: antiquewhite; */
 }
 .article p{
-    color: beige;
+    /* color: beige; */
     font-size: 28px;
     line-height: 2em;
 }
 .article p .imp{
     font-size: 2em;
+}
+.cows{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+.cows div{
+    width: 300px;
+}
+.cows img{
+    width: 100%;
 }
